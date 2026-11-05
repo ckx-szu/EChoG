@@ -8,6 +8,7 @@ __pycache__/
 *.pt
 *.pth
 *.zip
+!data_parts/*.zip
 .DS_Store
 private/
 raw/

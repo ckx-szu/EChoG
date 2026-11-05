@@ -1,0 +1,36 @@
+{
+  "recordings": 3264,
+  "files": 13056,
+  "archives": [
+    {
+      "name": "EChoG_data_part01.zip",
+      "bytes": 45849705,
+      "sha256": "fcb9a821feb5189b7f904f58783daa5b355b0b9bb214cc5b363cc88f6db656da",
+      "files": 10098
+    },
+    {
+      "name": "EChoG_data_part02.zip",
+      "bytes": 46967057,
+      "sha256": "ffebc255b55445fc8b83daab52d091880002f08647ee1df42ca679cf6af7d577",
+      "files": 784
+    },
+    {
+      "name": "EChoG_data_part03.zip",
+      "bytes": 46952722,
+      "sha256": "9dff87d7cdc5665b30604df70fc0344472c1daeebec6ef268a7895fe5a3191cd",
+      "files": 796
+    },
+    {
+      "name": "EChoG_data_part04.zip",
+      "bytes": 46966995,
+      "sha256": "8c6f24373ba7635aa867baef03a621ceca4829b89a3b20822334e060002859ec",
+      "files": 780
+    },
+    {
+      "name": "EChoG_data_part05.zip",
+      "bytes": 31747122,
+      "sha256": "1264a771f5be81d4e40d8e11c179ab3db2edeebe532f80f67770314a8c8fc046",
+      "files": 598
+    }
+  ]
+}

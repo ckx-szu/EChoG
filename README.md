@@ -6,12 +6,15 @@ It includes a portable implementation of the supplied EchoMAR architecture, data
 
 ## Download
 
-- [Versioned release and checksums](https://github.com/ckx-szu/EChoG/releases/tag/v1.0.0-aligned-3264)
-- [Complete bundle: code and data](https://github.com/ckx-szu/EChoG/releases/download/v1.0.0-aligned-3264/EChoG_complete_3264.zip)
-- [Data only: 3,264 MP4/MAT pairs and reference/mask images](https://github.com/ckx-szu/EChoG/releases/download/v1.0.0-aligned-3264/EChoG_data_3264.zip)
-- [Code and metadata](https://github.com/ckx-szu/EChoG/releases/download/v1.0.0-aligned-3264/EChoG_code_and_metadata.zip)
+Download or clone this repository, then run `python download_data.py` from its root directory. The script uses local archives when available; otherwise it downloads them from the anonymous mirror. It checks each archive's SHA-256 checksum and extracts all 3,264 recordings into `data/`.
 
-If cloning this repository, extract the data-only archive into its root directory. For a standalone download, extract the complete bundle and run the commands below from that directory.
+The data are stored directly in this repository as five independent ZIP archives, so the anonymous mirror can serve them without GitHub Release access:
+[part 1](data_parts/EChoG_data_part01.zip),
+[part 2](data_parts/EChoG_data_part02.zip),
+[part 3](data_parts/EChoG_data_part03.zip),
+[part 4](data_parts/EChoG_data_part04.zip), and
+[part 5](data_parts/EChoG_data_part05.zip).
+For manual installation, extract **all five** archives into the same project root. See [archive checksums](data_parts/manifest.json).
 
 | Split | Recordings | Patient groups | Recordings with valid disease labels |
 |---|---:|---:|---:|
@@ -22,13 +25,14 @@ If cloning this repository, extract the data-only archive into its root director
 
 ## Quick start
 
-Use Python 3.10–3.12. Extract the code archive, then extract `EChoG_data_3264.zip` into the same project directory. Its `data/` directory must sit alongside `metadata/` and `echog/`.
+Use Python 3.10–3.12. The `data/` directory must sit alongside `metadata/` and `echog/`.
 
 ```bash
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 # Linux/macOS: source .venv/bin/activate
 python -m pip install -r requirements-model.txt
+python download_data.py
 python -m echog verify --full
 python -m echog demo
 python -m echog smoke --out outputs/smoke
