@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cardiomyopathy",
+    "name": "心肌病（合并具体亚型）"
+  },
+  {
+    "id": "hf_dysfunction",
+    "name": "心力衰竭/心功能不全"
+  },
+  {
+    "id": "mitral_valve",
+    "name": "二尖瓣病变"
+  },
+  {
+    "id": "tricuspid_valve",
+    "name": "三尖瓣病变"
+  },
+  {
+    "id": "pulmonary_hypertension",
+    "name": "肺动脉高压"
+  },
+  {
+    "id": "septal_defect",
+    "name": "房/室间隔缺损"
+  }
+]

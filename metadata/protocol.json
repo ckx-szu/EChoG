@@ -1,0 +1,13 @@
+{
+  "name": "echog-aligned-v1",
+  "cohort": "rule-reconstructed-3264",
+  "image_size": [
+    128,
+    128
+  ],
+  "ecg": "one sample per video frame",
+  "reference": "manual start only",
+  "train_window": "random contiguous min(32,N) frames containing reference",
+  "evaluation_window": "fixed public-ID seeded windows in evaluation_windows.csv",
+  "paper_exact_reproduction": false
+}

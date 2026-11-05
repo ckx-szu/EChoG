@@ -1,0 +1,44 @@
+{
+  "data": {
+    "status": "PASS",
+    "records": 3264,
+    "decoded_records": 3264,
+    "all_data_hashes_checked": true,
+    "no_patient_overlap": true,
+    "no_identical_video_overlap": true
+  },
+  "execution": {
+    "status": "PASS",
+    "stages": [
+      "codec",
+      "generator",
+      "teacher",
+      "refiner"
+    ],
+    "steps_per_stage": 1,
+    "device": "cpu",
+    "trained_weights_for_quality_evaluation": false
+  },
+  "evaluation_command": {
+    "status": "PASS",
+    "records": 3,
+    "scope": "execution only, not model quality"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "opencv-python-headless": "4.14.0.94",
+      "Pillow": "12.3.0",
+      "torch": "2.5.1+cpu",
+      "torchvision": "0.20.1+cpu"
+    }
+  },
+  "limitations": [
+    "Original paper weights were not supplied.",
+    "Public ECG grid and fixed windows differ from original server protocol.",
+    "CPU verified; CUDA not exercised."
+  ]
+}

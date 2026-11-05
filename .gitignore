@@ -1,9 +1,18 @@
-# Keep clinical data and secrets out of the initial repository.
 data/
+runs/
+checkpoints/
+outputs/
+.venv/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.zip
+.DS_Store
 private/
 raw/
-checkpoints/
 logs/
+node_modules/
 *.dcm
 *.DICOM
 *.dicom
@@ -12,21 +21,9 @@ logs/
 *.mat
 *.xlsx
 *.xls
-*.csv
-*.tsv
-*.pt
-*.pth
-*.ckpt
-*.zip
 *.pem
 *.key
 id_ed25519*
 .env
 .env.*
-__pycache__/
-.venv/
-node_modules/
 config.local.*
-
-# Review any future exception before force-adding ignored files.
-

@@ -1,0 +1,21 @@
+{
+  "lr": 0.0002,
+  "wd": 0.01,
+  "teacher": 0.1,
+  "feature": 0.5,
+  "logit": 1.0,
+  "motion": 2.0,
+  "sigma": 0.08,
+  "flow_scale": 0.08,
+  "residual_scale": 0.12,
+  "coarse_size": 16,
+  "fg": 0.25,
+  "edges": 0.15,
+  "coarse": 0.1,
+  "anchor": 0.01,
+  "flow_tv": 0.005,
+  "no_anchor": false,
+  "no_film": false,
+  "shallow": false,
+  "balanced": false
+}

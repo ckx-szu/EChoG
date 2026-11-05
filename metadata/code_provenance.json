@@ -1,0 +1,49 @@
+[
+  {
+    "source_file": "v2/codec_base.py",
+    "source_sha256": "8f114fef289e6f8b078953dd6f3d5e75085900f4452e9cc07f9bd3e852f1b907"
+  },
+  {
+    "source_file": "v2/codec_detail.py",
+    "source_sha256": "cdfd037914b889cf67ed1408e6f5c739868abfe19d4b09cd9dbc98f841107d8d"
+  },
+  {
+    "source_file": "v2/codec_transport.py",
+    "source_sha256": "eb53653ed57e4c0ba49ea788efaef72746cdabe5f102aaeec0cad02ab1804c89"
+  },
+  {
+    "source_file": "v2/models.py",
+    "source_sha256": "23b2e30228fd45a15b564b03a07df03f8a5d4ca3059849d931c94a9565ef8728"
+  },
+  {
+    "source_file": "v3/r8_axial.py",
+    "source_sha256": "049dbd1a14adce6104544f0f7b7e6b9c11dafef3843adf2182fb43c640f8f084"
+  },
+  {
+    "source_file": "v3/r8_disease_components.py",
+    "source_sha256": "f4f04e093d65c3cb62c27c55f808d8ee2192f03099f4146e260c7f87391bc551"
+  },
+  {
+    "source_file": "v3/generator.py",
+    "source_sha256": "6995bccf5adc8ecafdfd424f3639d7b3c263491fc6254b0ad535041b779f71dd"
+  },
+  {
+    "source_file": "echomar_search_20261102/system.py",
+    "source_sha256": "2655eacdffadc43fab06a0bd0830ecd9681e3e1dc8dff9e9129bb970e4893efb"
+  },
+  {
+    "source_file": "v2/objectives.py",
+    "source_sha256": "a6b0c1480f16d0b7b79e93eead5d91db789d6c56b8dd8029caecaa371f69c470"
+  },
+  {
+    "source_file": "echomar_search_20261102/configs.json",
+    "source_sha256": "ac652b9f36206dfcbd5fde0bab79d753ed538a88d7dec317f9954eb3b949d7cc"
+  },
+  {
+    "adaptations": [
+      "Package-relative imports; remove server paths and legacy-loading entry point.",
+      "Keep ReferenceCodec, R8Adapter, Refiner and disease architecture definitions.",
+      "New portable training/CLI and frame-aligned ECG loader; original historical training windows unavailable."
+    ]
+  }
+]
